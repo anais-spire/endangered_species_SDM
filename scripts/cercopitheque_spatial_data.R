@@ -18,6 +18,5 @@ class(sp)
 sp
 sp <- terra::vect(coords, crs = '+proj=longlat +datum=WGS84')
 sp
-(data <- data.frame(ID=1:10,species=sample(c('beech','oak','birch'),10,replace=T)))
-terra:: values(sp) <- data
+terra:: values(sp) <- cercopitheque_gbif
 sp

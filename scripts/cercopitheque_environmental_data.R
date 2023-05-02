@@ -1,4 +1,4 @@
-# Session b2: Environmental data
+# Environmental data
 
 # https://damariszurell.github.io/EEC-MGC/b2_EnvData.html#1_Climate_data
 # https://rspatial.org/raster/sdm/4_sdm_envdata.html
@@ -6,7 +6,7 @@
 library(terra)
 library(geodata)
 
-folder_path <- "../data/environmental_data"
+folder_path <- "data/environmental_data"
 getwd()
 
 #  CLIMATE DATA (worldclim)
@@ -16,9 +16,27 @@ getwd()
 # download the 19 bioclimatic variables at a 10’ resolution
 worldclim_current_data_10 <- geodata::worldclim_global(var = 'bio', res = 10, download = F, path = folder_path)
 worldclim_current_data_10
+# SpatRaster
+# dimensions : nrow = 1080, ncol = 2160, nlyr = 19
+# resolution : x = 0.1666667, y = 0.1666667
+# extent : xmin = -180, xmax = 180, ymin = -90, ymax = 90
+# sources : wc2.1_10m_bio_1.tif until 19.tif
+
 plot(worldclim_current_data_10)
 names(worldclim_current_data_10)
-# on peut crop les data avec terra
+
+# CROP TO THE REGION OF OUR INTEREST (BENIN, NIGERIA, ...)
+# changing the extent doesn't affect the number of rows and columns of the raster object. It changes the resolution instead
+e <- c(-3.5, 12, 3, 14)
+ext(worldclim_current_data_10) <- e
+worldclim_current_data_10
+# resolution : x = 0.007175926, y = 0.01018519
+
+crop(worldclim_current_data_10, ext(-3.5, 12, 3, 14))
+worldclim_current_data_10
+
+plot(worldclim_current_data_10)
+names(worldclim_current_data_10)
 
 
 # B] FUTURE DATA
@@ -28,17 +46,17 @@ worldclim_fut_data_10
 plot(worldclim_fut_data_10)
 names(worldclim_fut_data_10)
 
-# we keep the names of the future data cuz there are simpler
+# for the names, we choose to keep the names of the future data everywhere, because there are simpler
 names(worldclim_current_data_10) <- names(worldclim_fut_data_10)
 
 # C] SAVE CLIMATE DATA (SpatRaster object)
-# terra::writeRaster(worldclim_current_data_10,filename='data/environmental_data/bioclim_global_res10.grd')
-# terra::writeRaster(worldclim_fut_data_10,filename='data/environmental_data/bioclim_fut_global_res10.grd')
+terra::writeRaster(worldclim_current_data_10,filename='data/environmental_data/bioclim_global_res10.grd')
+terra::writeRaster(worldclim_fut_data_10,filename='data/environmental_data/bioclim_fut_global_res10.grd')
+
+# D] RELOAD SAVED CLIMATE DATA
 
 
-
-
-# LAND COVER DATA (ESA) : ne marche pas...
+# LAND COVER DATA (ESA) : doesn't work...
 
 # A] CURRENT DATA
 trees_30sec <- geodata::landcover(var='trees', path=folder_path, download=T) # other variables : shrubs, grassland, cropland, bare, wetland, ...
@@ -48,14 +66,11 @@ plot(trees_30sec)
 trees_10 <- terra::aggregate(trees_30sec, fact=20, fun='mean')
 
 # B] FUTURE DATA
-# pas dispo sur l'ESA
+# not available on ESA
 
 
 # SOIL DATA
-
-
-
-
+# not available
 
 
 # JOIN ENVIRONMENTAL DATA
@@ -80,7 +95,6 @@ duplicated(cercopitheque_gbif_env$cells) # 0 : we do not have any duplicate
 
 # save data
 save(cercopitheque_gbif_env, file='data/cercopitheque_data.RData')
-
 
 # RASTER DATA
 files <- list.files(folder_path, pattern='grd$', full.names=TRUE )
