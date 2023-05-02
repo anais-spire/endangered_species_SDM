@@ -138,7 +138,10 @@ lat_range <- c(xmin, xmax)
 ymin <- range(cercopitheque_gbif_coords$Lon)[1]-1
 ymax <- range(cercopitheque_gbif_coords$Lon)[2]+2
 lon_range <- c(ymin, ymax)
+<<<<<<< HEAD
 # ext(-3.5, 12, 3, 14)
+=======
+>>>>>>> 65b96554fe286e109968e9d78961f58688eb4039
 
 # map (wrld_simpl from maptools package)
 data(wrld_simpl)
@@ -149,9 +152,17 @@ points(cercopitheque_gbif_coords$Lon, cercopitheque_gbif_coords$Lat, col='red', 
 # plot points again to add a border, for better visibility
 # points(cercopitheque_gbif$Lon, cercopitheque_gbif$Lat, col='red', cex=0.75)
 
+<<<<<<< HEAD
 # Remark: we could also add administrative region using the raster package (but not necessary here)
+=======
+# Remark : we could also add administrative region using the raster package (but not necessary here)
+>>>>>>> 65b96554fe286e109968e9d78961f58688eb4039
 
 # SAVE THE DATA
 save(cercopitheque_gbif, cercopitheque_gbif_coords, file='data/species_data/cercopitheque_gbif.RData')
 
+<<<<<<< HEAD
 # lsdata('data/species_data/cercopitheque_gbif.RData')
+=======
+#lsdata('data/species_data/cercopitheque_gbif.RData')
+>>>>>>> 65b96554fe286e109968e9d78961f58688eb4039
