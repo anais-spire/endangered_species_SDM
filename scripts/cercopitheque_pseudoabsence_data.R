@@ -1,5 +1,8 @@
 # pseudo-absence data
 
+# THIS SCRIPT DOESN'T WORK (problem of packages + map resolution + mask for the oceans)
+# SEE CERCOPITHEQUE_PSEUDOABSENCE_DATA_KLUDGE INSTEAD!! This script is a workaround for the parts that do not work here. It is not perfect in terms of randomness but it does the job.
+
 # https://stackoverflow.com/questions/52637004/mask-oceans-wrld-simpl
 # For advice on how many background/pseudo-absence points you need, please read (Barbet-Massin et al. 2012)
 
@@ -31,18 +34,29 @@ plot(cercopitheque_region, axes=TRUE, col="light yellow")
 box()
 points(cercopitheque_gbif_coords, col='red', pch=20, cex=1)
 
-plot(wrld_simpl)
-typeof(wrld_simpl)
-raster(wrld_simpl)
-mask <- raster(wrld_simpl)
-bg <- randomPoints(mask, 500)
+# transform to raster object (sometimes called mask : mask <- raster(cercopitheque_region))
+raster(cercopitheque_region)
+# RasterLayer
+# Dimensions : 10, 10, 100
+# Resolution : 1.55, 1.1
+
+bg <- 0.1*randomPoints(raster(cercopitheque_region), 500) #warning: changed n to ncell of the mask
 points(bg, cex=0.5)
+
+# sampleRandom
+sampleRandom(raster(cercopitheque_region), size = 100)
+sampleRandom(raster(cercopitheque_region), size = 100, cells=TRUE, sp=TRUE)
+
 
 # dismo package
 bg_rand <- 6+scale(dismo::randomPoints(raster(cercopitheque_region), 100)) # p = sp in order to avoid presence points but no
-# bg_rand <- dismo::randomPoints(raster(cercopitheque_region), 100, p = sp)
+bg_rand <- dismo::randomPoints(raster(cercopitheque_region), 50, p = cercopitheque_gbif_coords)
 points(bg_rand,col = 'magenta',pch=19,cex=0.3)
 
 # terra package
-bg_rand_t <- terra::spatSample(cercopitheque_region, 100, as.points=T, na.rm=T)
+bg_rand_t <- terra::spatSample(raster(cercopitheque_region), 100, as.points=T, na.rm=T)
 points(bg_rand_t,pch=19,cex=0.3)
+
+bg_rand_2 <- terra::randomPoints(raster(cercopitheque_region), n=50)
+points(bg_rand_2, col='blue', pch=20, cex=1)
+
