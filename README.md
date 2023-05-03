@@ -12,13 +12,15 @@ The data comes from GBIF and we added observation points collected in the follow
 ## Environmental data
 The data comes from Worldclim (middle-case scenario) and ESA
 
+## Random forest
+We chose the random forest algorithm because it uses a very simple machine learning approach, easily reproducible, and with generally good results even on small datasets as it is the case here.
+
 ## Bugs and difficulties
 Many R packages used by other scientists were not up to date or didn't work on our data (scrubr for cleaning the data, terra for environmental data, mecofun for GLM, ...). Though we often found workarounds, this is particularly challenging for maps (joining, stacking, ...). Dealing with spatial data on R, especially with maps of different resolutions, is a problem we have not yet solved.
 
 Many SDM tutorials are written by chunks, and the input data is reprocessed between the step. Here, we wanted to do everything on our own data and had to put the chunks together. This is something we have not yet succeeded to do.
 
 ## Acknowledgements
-Project done as part of the bachelor's last semester, in université Côte d'Azur.
+Project done as part of the bachelor's last semester, in université Côte d'Azur, Nice, France.
 Conducted by two students of L3 BIM: Tidjani CISSE and Anaïs SPIRE.
 Supervised by Franck DELAUNAY, Christophe BECAVIN, Simon GIREL.
-
