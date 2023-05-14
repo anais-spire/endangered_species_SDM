@@ -1,0 +1,1205 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/">
+    <bib:Document rdf:about="#item_1">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_8"/>
+        <link:link rdf:resource="#item_5"/>
+        <link:link rdf:resource="#item_22"/>
+        <link:link rdf:resource="#item_7"/>
+        <link:link rdf:resource="#item_2"/>
+        <link:link rdf:resource="#item_6"/>
+        <dc:title>12_Tutorials for SDM in R</dc:title>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_8">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Blast Benito github</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://blasbenito.github.io/spatialRF/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 13:04:35</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Blast Benito github</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://blasbenito.github.io/spatialRF/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 13:04:35</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_5">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Damaris Zurell github</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://damariszurell.github.io/SDM-Intro/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 12:57:48</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Damaris Zurell github</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://damariszurell.github.io/SDM-Intro/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 12:57:48</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_22">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Hijmans tutorial.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Hijmans tutorial.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_7">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Jeff Oliver github</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://jcoliver.github.io/learn-r/011-species-distribution-models.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 13:03:42</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Jeff Oliver github</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://jcoliver.github.io/learn-r/011-species-distribution-models.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 13:03:42</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_2">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>R documentation (raster)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://rspatial.org/raster/sdm/1_sdm_introduction.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 12:45:17</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>R documentation (raster)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://rspatial.org/raster/sdm/1_sdm_introduction.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 12:45:17</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_6">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>R documentation (SDM)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://rspatial.org/sdm/1_sdm_introduction.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 13:02:59</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>R documentation (SDM)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://rspatial.org/sdm/1_sdm_introduction.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 13:02:59</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+    </z:Attachment>
+    <rdf:Description rdf:about="https://www.gbif.org/occurrence/download/0288132-220831081235567">
+        <z:itemType>dataset</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>The Global Biodiversity Information Facility</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>GBIF.Org User</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>biodiversity</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>GBIF</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>species occurrences</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>13_Species data</dc:title>
+        <dcterms:abstract>A dataset containing 117 species occurrences available in GBIF matching the query: { &quot;TaxonKey&quot; : [ &quot;is Cercopithecus erythrogaster Gray, 1866&quot; ] } The dataset includes 117 records from 19 constituent datasets: 1 records from Order Primates. 5 records from Inventaire des espèces animales présentes dans les aires protégées et parcs nationaux au Bénin. 8 records from iNaturalist Research-grade Observations. 8 records from List of animalia, fungi and plant species recorded through naturalist observations and research activities in Benin. Data mobilized in the framework of a JRS Biodiversity Foundation project of Benin. 1 records from NMNH Extant Specimen Records (USNM, US). 2 records from Naturalis Biodiversity Center (NL) - Museum collection digitized at storage unit level. 2 records from IUCN Red list of some Plants and Animals along the Nigerian Coast. 5 records from Census of the animals of Benin. 1 records from Order Primates. 9 records from Census of the threatened species of Benin.. 11 records from Liste d'espèces animales recensées au cours des activités de l'Organisation pour le Développement Durable et la Biodiversité (ODDB ONG) au Bénin. 3 records from INSDC Sequences. 8 records from The mammals collection (ZM) of the Muséum national d'Histoire naturelle (MNHN - Paris). 1 records from Cercopithecidae. 5 records from Naturalis Biodiversity Center (NL) - Mammalia. 41 records from Natural History Museum (London) Collection Specimens. 1 records from Biodiversity of Bayelsa Coastal Communities, Nigeria. 1 records from List of animal species censused during activities of ODDB NGO in Benin. 4 records from International Barcode of Life project (iBOL). Data from some individual datasets included in this download may be licensed under less restrictive terms.</dcterms:abstract>
+        <dc:date>2023</dc:date>
+        <z:libraryCatalog>DOI.org (Datacite)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.gbif.org/occurrence/download/0288132-220831081235567</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 13:05:19</dcterms:dateSubmitted>
+        <dc:rights>Creative Commons Attribution Non Commercial 4.0 International</dc:rights>
+        <dc:description>Artwork Size: 9754
+Pages: 9754
+DOI: 10.15468/DL.VCENJ6</dc:description>
+        <dc:identifier>DOI 10.15468/DL.VCENJ6</dc:identifier>
+        <z:medium>Darwin Core Archive</z:medium>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.worldclim.org/data/cmip6/cmip6_clim10m.html">
+        <z:itemType>dataset</z:itemType>
+        <dc:title>14_Environmental data</dc:title>
+        <dcterms:abstract>Scale: 10 minute
+GCM: ACCESS-CMIP6
+SSP: SSP2</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.worldclim.org/data/cmip6/cmip6_clim10m.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_13">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>3_cercopitheque_Togo_Agbessi_2016.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://beep.ird.fr/collect/upb/index/assoc/IDR-2016-AGB-DYN/IDR-2016-AGB-DYN.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 13:19:12</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>3_cercopitheque_Togo_Agbessi_2016.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://beep.ird.fr/collect/upb/index/assoc/IDR-2016-AGB-DYN/IDR-2016-AGB-DYN.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 13:19:12</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_14">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Agbessi</foaf:surname>
+                        <foaf:givenName>Koffi Ganyo Eric</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_13"/>
+        <dc:title>3_Dynamique spatiale des populations de Cercopithecus erythrogaster erythrogaster Gray dans le complexe d'aires protégées Togodo (Togo)</dc:title>
+        <z:language>fr</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+    </bib:Article>
+    <bib:BookSection rdf:about="urn:isbn:978-2-7099-1765-0">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dcterms:isPartOf>
+                    <bib:Series>
+                       <dc:title>Colloques et séminaires</dc:title>
+                    </bib:Series>
+                </dcterms:isPartOf>
+                <dc:identifier>ISBN 978-2-7099-1765-0</dc:identifier>
+                <dc:title>Quelles aires protégées pour l’Afrique de l’Ouest ? : Conservation de la biodiversité et développement</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Marseille</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>IRD Éditions</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kassa</foaf:surname>
+                        <foaf:givenName>Barthélémy</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nobimè</foaf:surname>
+                        <foaf:givenName>Georges</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hanon</foaf:surname>
+                        <foaf:givenName>Laurence</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Assogbadjo</foaf:surname>
+                        <foaf:givenName>Achille Ephrem</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sinsin</foaf:surname>
+                        <foaf:givenName>Brice</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fournier</foaf:surname>
+                        <foaf:givenName>Anne</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mensah</foaf:surname>
+                        <foaf:givenName>Guy Apollinaire</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <link:link rdf:resource="#item_17"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>environnement</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>faune sauvage</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>gestion de l’environnement</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>protection de l’écosystème</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>ressources naturelles</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>végétation</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>2_Caractéristiques de l’habitat du singe à ventre rouge (Cercopithecus e. erythrogaster) dans le Sud-Bénin</dc:title>
+        <dc:date>2014-04-02</dc:date>
+        <z:language>fr</z:language>
+        <z:libraryCatalog>OpenEdition Books</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://books.openedition.org/irdeditions/8037</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 13:27:04</dcterms:dateSubmitted>
+        <dc:rights>https://www.openedition.org/12554</dc:rights>
+        <dc:description>Code: Quelles aires protégées pour l’Afrique de l’Ouest ? : Conservation de la biodiversité et développement
+DOI: 10.4000/books.irdeditions.8037</dc:description>
+        <bib:pages>262-271</bib:pages>
+    </bib:BookSection>
+    <z:Attachment rdf:about="#item_17">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>2_cercopitheque_Benin_Kassa_2007.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>2_cercopitheque_Benin_Kassa_2007.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/10.1002/1521-1878(200012)22:12&lt;1123::AID-BIES10&gt;3.0.CO;2-C">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:02659247"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Purvis</foaf:surname>
+                        <foaf:givenName>Andy</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jones</foaf:surname>
+                        <foaf:givenName>Kate E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mace</foaf:surname>
+                        <foaf:givenName>Georgina M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_19"/>
+        <dc:title>1_Extinction</dc:title>
+        <dc:date>2000-11-10</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/10.1002/1521-1878(200012)22:12&lt;1123::AID-BIES10&gt;3.0.CO;2-C</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 13:50:20</dcterms:dateSubmitted>
+        <bib:pages>1123-1133</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:02659247">
+        <prism:volume>22</prism:volume>
+        <dc:title>BioEssays</dc:title>
+        <dc:identifier>DOI 10.1002/1521-1878(200012)22:12&lt;1123::AID-BIES10&gt;3.0.CO;2-C</dc:identifier>
+        <prism:number>12</prism:number>
+        <dcterms:alternative>Bioessays</dcterms:alternative>
+        <dc:identifier>ISSN 02659247</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_19">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>1_extinction_review_2000.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>1_extinction_review_2000.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.cambridge.org/core/journals/environmental-conservation/article/what-are-the-roles-of-species-distribution-models-in-conservation-planning/E9A0278A64653CE1B1BE23B704C131A8">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0376-8929,%201469-4387"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>McSHEA</foaf:surname>
+                        <foaf:givenName>William J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_21"/>
+        <dc:title>6_What are the roles of species distribution models in conservation planning?</dc:title>
+        <dcterms:abstract>The development of species distribution models (SDMs) has benefited biodiversity conservation through their linkage of science to policy and decision processes. These models have evolved to provide scenarios of future landscapes based on known and projected environmental parameters. Whereas there are many caveats to their use, the persuasive power of the models for conveying the consequences of environmental change to the non-science community is immense. Scientists are obliged to convey the uncertainty of the futures depicted in their models, but also to involve the stakeholders who will shape those future conditions. Stakeholders can identify the natural resources they want to sustain, voice their priorities in environmental policy, and articulate the range of solutions they are willing to accept. The creation of alternative futures is an academic exercise if not linked to real viable decisions concerning important resources. SDMs only reach their full potential when they bring together scientists, public stakeholders and policy makers, and are used as an adaptive management tool to understand complex landscapes that are undergoing short- and long-term change.</dcterms:abstract>
+        <dc:date>2014/06</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Cambridge University Press</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.cambridge.org/core/journals/environmental-conservation/article/what-are-the-roles-of-species-distribution-models-in-conservation-planning/E9A0278A64653CE1B1BE23B704C131A8</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:01:57</dcterms:dateSubmitted>
+        <dc:description>Publisher: Cambridge University Press</dc:description>
+        <bib:pages>93-96</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0376-8929,%201469-4387">
+        <prism:volume>41</prism:volume>
+        <dc:title>Environmental Conservation</dc:title>
+        <dc:identifier>DOI 10.1017/S0376892913000581</dc:identifier>
+        <prism:number>2</prism:number>
+        <dc:identifier>ISSN 0376-8929, 1469-4387</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_21">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>6_SDM_conservation_planning_McShea_2014.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E9A0278A64653CE1B1BE23B704C131A8/S0376892913000581a.pdf/div-class-title-what-are-the-roles-of-species-distribution-models-in-conservation-planning-div.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:01:58</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>6_SDM_conservation_planning_McShea_2014.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E9A0278A64653CE1B1BE23B704C131A8/S0376892913000581a.pdf/div-class-title-what-are-the-roles-of-species-distribution-models-in-conservation-planning-div.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:01:58</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://doi.editoracubo.com.br/10.4322/natcon.2012.019">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:16790073"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Peterson</foaf:surname>
+                        <foaf:givenName>A. Townsend</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Soberón</foaf:surname>
+                        <foaf:givenName>Jorge</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_24"/>
+        <dc:title>4_Species Distribution Modeling and Ecological Niche Modeling: Getting the Concepts Right</dc:title>
+        <dc:date>2012</dc:date>
+        <z:shortTitle>Species Distribution Modeling and Ecological Niche Modeling</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://doi.editoracubo.com.br/10.4322/natcon.2012.019</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:25:20</dcterms:dateSubmitted>
+        <bib:pages>102-107</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:16790073">
+        <prism:volume>10</prism:volume>
+        <dc:title>Natureza &amp; Conservação</dc:title>
+        <dc:identifier>DOI 10.4322/natcon.2012.019</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>NatCon</dcterms:alternative>
+        <dc:identifier>ISSN 16790073</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_24">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>4_SDM_ENM_concepts_review_2012.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.editoracubo.com.br/10.4322/natcon.2012.019</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:25:23</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>4_SDM_ENM_concepts_review_2012.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.editoracubo.com.br/10.4322/natcon.2012.019</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:25:23</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0304380019303254">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0304-3800"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pecchi</foaf:surname>
+                        <foaf:givenName>Matteo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Marchi</foaf:surname>
+                        <foaf:givenName>Maurizio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Burton</foaf:surname>
+                        <foaf:givenName>Vanessa</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Giannetti</foaf:surname>
+                        <foaf:givenName>Francesca</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Moriondo</foaf:surname>
+                        <foaf:givenName>Marco</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bernetti</foaf:surname>
+                        <foaf:givenName>Iacopo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bindi</foaf:surname>
+                        <foaf:givenName>Marco</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chirici</foaf:surname>
+                        <foaf:givenName>Gherardo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_27"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Climate change scenarios</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Ecological mathematics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Ecology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Ecosystem services from forests</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Forest modeling</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Spatial analyses</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>7_Species distribution modelling to support forest management. A literature review</dc:title>
+        <dcterms:abstract>Species Distribution Modelling (SDM) techniques were originally developed in the mid-1980s. In this century they are gaining increasing attention in the literature and in practical use as a powerful tool to support forest management strategies especially under climate change. In this review paper we consider species occurrence datasets, climatic and soil predictor variables, modelling algorithms, evaluation methods and widely used software for SDM studies. We describe several important and freely available sources for species occurrence and interpolated climatic data. We outline the use of both presence-only and presence/absence modelling algorithms including distance-based algorithms, machine learning algorithms and regression-based models. We conclude that SDM techniques provide a valuable asset for forest managers. However, it is essential to consider uncertainties behind the use of future climate change scenarios.</dcterms:abstract>
+        <dc:date>2019-11-01</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0304380019303254</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:29:51</dcterms:dateSubmitted>
+        <bib:pages>108817</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0304-3800">
+        <prism:volume>411</prism:volume>
+        <dc:title>Ecological Modelling</dc:title>
+        <dc:identifier>DOI 10.1016/j.ecolmodel.2019.108817</dc:identifier>
+        <dcterms:alternative>Ecological Modelling</dcterms:alternative>
+        <dc:identifier>ISSN 0304-3800</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_27">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>7_SDM_main_steps_review_2019.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0304380019303254/pdfft?md5=07cbf0e1a174e855865096e400ca76e0&amp;pid=1-s2.0-S0304380019303254-main.pdf&amp;isDTMRedir=Y</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:29:53</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>7_SDM_main_steps_review_2019.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0304380019303254/pdfft?md5=07cbf0e1a174e855865096e400ca76e0&amp;pid=1-s2.0-S0304380019303254-main.pdf&amp;isDTMRedir=Y</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:29:53</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-8453-7">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dcterms:isPartOf>
+                   <bib:Series><dc:title>COMPASS '21</dc:title></bib:Series>
+                </dcterms:isPartOf>
+                <dc:identifier>ISBN 978-1-4503-8453-7</dc:identifier>
+                <dc:title>ACM SIGCAS Conference on Computing and Sustainable Societies</dc:title>
+                <dc:identifier>DOI 10.1145/3460112.3471966</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>New York, NY, USA</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Association for Computing Machinery</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Beery</foaf:surname>
+                        <foaf:givenName>Sara</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cole</foaf:surname>
+                        <foaf:givenName>Elijah</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Parker</foaf:surname>
+                        <foaf:givenName>Joseph</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Perona</foaf:surname>
+                        <foaf:givenName>Pietro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Winner</foaf:surname>
+                        <foaf:givenName>Kevin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_30"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>ecological niche modeling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>machine learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>species distribution modeling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>8_Species Distribution Modeling for Machine Learning Practitioners: A Review</dc:title>
+        <dcterms:abstract>Conservation science depends on an accurate understanding of what’s happening in a given ecosystem. How many species live there? What is the makeup of the population? How is that changing over time? Species Distribution Modeling (SDM) seeks to predict the spatial (and sometimes temporal) patterns of species occurrence, i.e. where a species is likely to be found. The last few years have seen a surge of interest in applying powerful machine learning tools to challenging problems in ecology [2, 5, 8]. Despite its considerable importance, SDM has received relatively little attention from the computer science community. Our goal in this work is to provide computer scientists with the necessary background to read the SDM literature and develop ecologically useful ML-based SDM algorithms. In particular, we introduce key SDM concepts and terminology, review standard models, discuss data availability, and highlight technical challenges and pitfalls.</dcterms:abstract>
+        <dc:date>septembre 23, 2021</dc:date>
+        <z:shortTitle>Species Distribution Modeling for Machine Learning Practitioners</z:shortTitle>
+        <z:libraryCatalog>ACM Digital Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/10.1145/3460112.3471966</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06</dcterms:dateSubmitted>
+        <bib:pages>329–348</bib:pages>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_30">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>8_SDM_ML_review_2021.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/3460112.3471966</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:37:13</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>8_SDM_ML_review_2021.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/3460112.3471966</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:37:13</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://peerj.com/articles/2849">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2167-8359"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mi</foaf:surname>
+                        <foaf:givenName>Chunrong</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Huettmann</foaf:surname>
+                        <foaf:givenName>Falk</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Guo</foaf:surname>
+                        <foaf:givenName>Yumin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Han</foaf:surname>
+                        <foaf:givenName>Xuesong</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wen</foaf:surname>
+                        <foaf:givenName>Lijia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_32"/>
+        <dc:title>9_Why choose Random Forest to predict rare species distribution with few samples in large undersampled areas? Three Asian crane species models provide supporting evidence</dc:title>
+        <dcterms:abstract>Species distribution models (SDMs) have become an essential tool in ecology, biogeography, evolution and, more recently, in conservation biology. How to generalize species distributions in large undersampled areas, especially with few samples, is a fundamental issue of SDMs. In order to explore this issue, we used the best available presence records for the Hooded Crane (Grus monacha, n = 33), White-naped Crane (Grus vipio, n = 40), and Black-necked Crane (Grus nigricollis, n = 75) in China as three case studies, employing four powerful and commonly used machine learning algorithms to map the breeding distributions of the three species: TreeNet (Stochastic Gradient Boosting, Boosted Regression Tree Model), Random Forest, CART (Classification and Regression Tree) and Maxent (Maximum Entropy Models). In addition, we developed an ensemble forecast by averaging predicted probability of the above four models results. Commonly used model performance metrics (Area under ROC (AUC) and true skill statistic (TSS)) were employed to evaluate model accuracy. The latest satellite tracking data and compiled literature data were used as two independent testing datasets to confront model predictions. We found Random Forest demonstrated the best performance for the most assessment method, provided a better model fit to the testing data, and achieved better species range maps for each crane species in undersampled areas. Random Forest has been generally available for more than 20 years and has been known to perform extremely well in ecological predictions. However, while increasingly on the rise, its potential is still widely underused in conservation, (spatial) ecological applications and for inference. Our results show that it informs ecological and biogeographical theories as well as being suitable for conservation applications, specifically when the study area is undersampled. This method helps to save model-selection time and effort, and allows robust and rapid assessments and decisions for efficient conservation.</dcterms:abstract>
+        <dc:date>2017-01-12</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Why choose Random Forest to predict rare species distribution with few samples in large undersampled areas?</z:shortTitle>
+        <z:libraryCatalog>peerj.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://peerj.com/articles/2849</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:39:33</dcterms:dateSubmitted>
+        <dc:description>Publisher: PeerJ Inc.</dc:description>
+        <bib:pages>e2849</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2167-8359">
+        <prism:volume>5</prism:volume>
+        <dc:title>PeerJ</dc:title>
+        <dc:identifier>DOI 10.7717/peerj.2849</dc:identifier>
+        <dcterms:alternative>PeerJ</dcterms:alternative>
+        <dc:identifier>ISSN 2167-8359</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_32">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>9_SDM_RF_undersampled_area_2017.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://peerj.com/articles/2849.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:39:38</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>9_SDM_RF_undersampled_area_2017.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://peerj.com/articles/2849.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:39:38</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.01509">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1600-0587"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>van Proosdij</foaf:surname>
+                        <foaf:givenName>André S. J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sosef</foaf:surname>
+                        <foaf:givenName>Marc S. M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wieringa</foaf:surname>
+                        <foaf:givenName>Jan J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Raes</foaf:surname>
+                        <foaf:givenName>Niels</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_34"/>
+        <dc:title>10_Minimum required number of specimen records to develop accurate species distribution models</dc:title>
+        <dcterms:abstract>Species distribution models (SDMs) are widely used to predict the occurrence of species. Because SDMs generally use presence-only data, validation of the predicted distribution and assessing model accuracy is challenging. Model performance depends on both sample size and species’ prevalence, being the fraction of the study area occupied by the species. Here, we present a novel method using simulated species to identify the minimum number of records required to generate accurate SDMs for taxa of different pre-defined prevalence classes. We quantified model performance as a function of sample size and prevalence and found model performance to increase with increasing sample size under constant prevalence, and to decrease with increasing prevalence under constant sample size. The area under the curve (AUC) is commonly used as a measure of model performance. However, when applied to presence-only data it is prevalence-dependent and hence not an accurate performance index. Testing the AUC of an SDM for significant deviation from random performance provides a good alternative. We assessed the minimum number of records required to obtain good model performance for species of different prevalence classes in a virtual study area and in a real African study area. The lower limit depends on the species’ prevalence with absolute minimum sample sizes as low as 3 for narrow-ranged and 13 for widespread species for our virtual study area which represents an ideal, balanced, orthogonal world. The lower limit of 3, however, is flawed by statistical artefacts related to modelling species with a prevalence below 0.1. In our African study area lower limits are higher, ranging from 14 for narrow-ranged to 25 for widespread species. We advocate identifying the minimum sample size for any species distribution modelling by applying the novel method presented here, which is applicable to any taxonomic clade or group, study area or climate scenario.</dcterms:abstract>
+        <dc:date>2016</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.01509</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:41:11</dcterms:dateSubmitted>
+        <dc:description>_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.01509</dc:description>
+        <bib:pages>542-552</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1600-0587">
+        <prism:volume>39</prism:volume>
+        <dc:title>Ecography</dc:title>
+        <dc:identifier>DOI 10.1111/ecog.01509</dc:identifier>
+        <prism:number>6</prism:number>
+        <dc:identifier>ISSN 1600-0587</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_34">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>10_minimum_species_data_Proosdij_2016.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ecog.01509</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:41:17</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>10_minimum_species_data_Proosdij_2016.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ecog.01509</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:41:17</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1023/A:1010933404324">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1573-0565"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Breiman</foaf:surname>
+                        <foaf:givenName>Leo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_37"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>classification</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>ensemble</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>regression</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>11_Random Forests (mathematics)</dc:title>
+        <dcterms:abstract>Random forests are a combination of tree predictors such that each tree depends on the values of a random vector sampled independently and with the same distribution for all trees in the forest. The generalization error for forests converges a.s. to a limit as the number of trees in the forest becomes large. The generalization error of a forest of tree classifiers depends on the strength of the individual trees in the forest and the correlation between them. Using a random selection of features to split each node yields error rates that compare favorably to Adaboost (Y. Freund &amp; R. Schapire, Machine Learning: Proceedings of the Thirteenth International conference, ***, 148–156), but are more robust with respect to noise. Internal estimates monitor error, strength, and correlation and these are used to show the response to increasing the number of features used in the splitting. Internal estimates are also used to measure variable importance. These ideas are also applicable to regression.</dcterms:abstract>
+        <dc:date>2001-10-01</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Springer Link</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1023/A:1010933404324</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:43:38</dcterms:dateSubmitted>
+        <bib:pages>5-32</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1573-0565">
+        <prism:volume>45</prism:volume>
+        <dc:title>Machine Learning</dc:title>
+        <dc:identifier>DOI 10.1023/A:1010933404324</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>Machine Learning</dcterms:alternative>
+        <dc:identifier>ISSN 1573-0565</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_37">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>11_RF_maths_Breiman_2001.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.springer.com/content/pdf/10.1023%2FA%3A1010933404324.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:43:39</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>11_RF_maths_Breiman_2001.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.springer.com/content/pdf/10.1023%2FA%3A1010933404324.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 14:43:39</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.04960">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>43</prism:volume>
+                <dc:title>Ecography</dc:title>
+                <dc:identifier>DOI 10.1111/ecog.04960</dc:identifier>
+                <prism:number>9</prism:number>
+                <dc:identifier>ISSN 1600-0587</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zurell</foaf:surname>
+                        <foaf:givenName>Damaris</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Franklin</foaf:surname>
+                        <foaf:givenName>Janet</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>König</foaf:surname>
+                        <foaf:givenName>Christian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bouchet</foaf:surname>
+                        <foaf:givenName>Phil J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dormann</foaf:surname>
+                        <foaf:givenName>Carsten F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Elith</foaf:surname>
+                        <foaf:givenName>Jane</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fandos</foaf:surname>
+                        <foaf:givenName>Guillermo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Feng</foaf:surname>
+                        <foaf:givenName>Xiao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Guillera-Arroita</foaf:surname>
+                        <foaf:givenName>Gurutzeta</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Guisan</foaf:surname>
+                        <foaf:givenName>Antoine</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lahoz-Monfort</foaf:surname>
+                        <foaf:givenName>José J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Leitão</foaf:surname>
+                        <foaf:givenName>Pedro J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Park</foaf:surname>
+                        <foaf:givenName>Daniel S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Peterson</foaf:surname>
+                        <foaf:givenName>A. Townsend</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rapacciuolo</foaf:surname>
+                        <foaf:givenName>Giovanni</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schmatz</foaf:surname>
+                        <foaf:givenName>Dirk R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schröder</foaf:surname>
+                        <foaf:givenName>Boris</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Serra-Diaz</foaf:surname>
+                        <foaf:givenName>Josep M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Thuiller</foaf:surname>
+                        <foaf:givenName>Wilfried</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yates</foaf:surname>
+                        <foaf:givenName>Katherine L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zimmermann</foaf:surname>
+                        <foaf:givenName>Niklaus E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Merow</foaf:surname>
+                        <foaf:givenName>Cory</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_39"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>biodiversity assessment</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>ecological niche model</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>habitat suitability model</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>reproducibility</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Shiny</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>transparency</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>5_A standard protocol for reporting species distribution models</dc:title>
+        <dcterms:abstract>Species distribution models (SDMs) constitute the most common class of models across ecology, evolution and conservation. The advent of ready-to-use software packages and increasing availability of digital geoinformation have considerably assisted the application of SDMs in the past decade, greatly enabling their broader use for informing conservation and management, and for quantifying impacts from global change. However, models must be fit for purpose, with all important aspects of their development and applications properly considered. Despite the widespread use of SDMs, standardisation and documentation of modelling protocols remain limited, which makes it hard to assess whether development steps are appropriate for end use. To address these issues, we propose a standard protocol for reporting SDMs, with an emphasis on describing how a study's objective is achieved through a series of modeling decisions. We call this the ODMAP (Overview, Data, Model, Assessment and Prediction) protocol, as its components reflect the main steps involved in building SDMs and other empirically-based biodiversity models. The ODMAP protocol serves two main purposes. First, it provides a checklist for authors, detailing key steps for model building and analyses, and thus represents a quick guide and generic workflow for modern SDMs. Second, it introduces a structured format for documenting and communicating the models, ensuring transparency and reproducibility, facilitating peer review and expert evaluation of model quality, as well as meta-analyses. We detail all elements of ODMAP, and explain how it can be used for different model objectives and applications, and how it complements efforts to store associated metadata and define modelling standards. We illustrate its utility by revisiting nine previously published case studies, and provide an interactive web-based application to facilitate its use. We plan to advance ODMAP by encouraging its further refinement and adoption by the scientific community.</dcterms:abstract>
+        <dc:date>2020</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.04960</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 16:01:28</dcterms:dateSubmitted>
+        <dc:description>_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.04960</dc:description>
+        <bib:pages>1261-1277</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_39">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>5_SDM_protocol_Zurell_2020</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ecog.04960</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 16:01:31</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Attachment"/>
+        <z:itemType>attachment</z:itemType>
+        <dc:title>5_SDM_protocol_Zurell_2020</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ecog.04960</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-05-06 16:01:31</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+</rdf:RDF>
