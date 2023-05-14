@@ -11,7 +11,7 @@ library(maptools)
 library(sp)
 library(raster)
 
-
+# package to clean the data but doesn't work
 # library(scrubr) # package to clean the data
 # install.packages("remotes")
 # remotes::install_github("ropensci/scrubr")
@@ -26,7 +26,7 @@ gbif_data
 names(gbif_data)
 names(gbif_data$meta)
 names(gbif_data$data)
-gbif_citation(gbif_data) # sources of the datasets (gbif), occ_download needs a username so we use the old way
+gbif_citation(gbif_data) # sources of the datasets (gbif), occ_download requires a username, so we used the old way here
 
 # we keep only relevant information for us (we shrink the 'data' dataframe to only relevant columns)
 cercopitheque_gbif <- gbif_data$data[ , c("key", "scientificName", "decimalLongitude", "decimalLatitude", "coordinateUncertaintyInMeters", "locality", "stateProvince", "individualCount", "occurrenceStatus", "speciesKey","species", "year", "basisOfRecord", "institutionCode", "references")]
@@ -57,7 +57,7 @@ cercopitheque_gbif  <-  cercopitheque_gbif[!dups, ]
 nrow(cercopitheque_gbif)
 # at this step, we removed 8 duplicated rows, we now have 59 points
 
-# remove records of absence or zero-abundance (if any):
+# find records of absence or zero-abundance (if any):
 names(cercopitheque_gbif)
 sort(unique(cercopitheque_gbif$individualCount))  # notice if some points correspond to zero abundance
 sort(unique(cercopitheque_gbif$occurrenceStatus))  # check for different indications of "absent", which could be in different languages! and remember that R is case-sensitive
@@ -67,7 +67,7 @@ if (length(absence_rows) > 0) {
   cercopitheque_gbif <- cercopitheque_gbif[-absence_rows, ]
 }
 nrow(cercopitheque_gbif) 
-# at this step, still 59 rows, no duplicates detected
+# at this step, still 59 rows, no absence or zero-abundance data detected
 
 # SCRUBR package cleaning (doesn't work!)
 # This cleaning is important and not exhaustive for SDM)
@@ -101,8 +101,6 @@ plot(wrld_simpl, add=T, border='blue', lwd=2)
 points(cercopitheque_gbif_spatial[j, ], col='red', pch=20, cex=2) 
 # we do not have any reds, so we do not have any outlier points
 
-
-
 # ADD POINTS MANUALLY (incomplete data from gbif, add points found in the literature)
 
 # georeferencing : give coordinates to points where only the city/locality is given
@@ -132,12 +130,21 @@ nrow(cercopitheque_gbif_coords)
 # FINAL MAPPING OF OUR POINTS
 
 # find the right extent
-xmin <- range(cercopitheque_gbif_coords$Lat)[1]-4
-xmax <- range(cercopitheque_gbif_coords$Lat)[2]+4
-lat_range <- c(xmin, xmax)
-ymin <- range(cercopitheque_gbif_coords$Lon)[1]-1
-ymax <- range(cercopitheque_gbif_coords$Lon)[2]+2
-lon_range <- c(ymin, ymax)
+
+range(cercopitheque_gbif_coords$Lon)[1] # min lon = 1
+range(cercopitheque_gbif_coords$Lon)[2] # max lon = 6
+range(cercopitheque_gbif_coords$Lat)[1] # min lat = 4.88
+range(cercopitheque_gbif_coords$Lat)[2] # max lat = 10.6
+
+
+xmin <- range(cercopitheque_gbif_coords$Lon)[1]-5
+xmax <- range(cercopitheque_gbif_coords$Lon)[2]+5
+lon_range <- c(xmin, xmax)
+ymin <- range(cercopitheque_gbif_coords$Lat)[1]-1
+ymax <- range(cercopitheque_gbif_coords$Lat)[2]+1
+lat_range <- c(ymin, ymax)
+
+
 # ext(-3.5, 12, 3, 14)
 
 # map (wrld_simpl from maptools package)

@@ -72,17 +72,16 @@ plot(worldclim_fut_data_10_crop)
 names(worldclim_fut_data_10_crop)
 
 # C] SAVE CLIMATE DATA
+current_env <- worldclim_current_data_10
+future_env <- worldclim_fut_data_10
 # in SpatRaster object
 terra::writeRaster(worldclim_current_data_10, filename='data/environmental_data/bioclim_global_res10.grd')
 terra::writeRaster(worldclim_fut_data_10, filename='data/environmental_data/bioclim_fut_global_res10.grd')
 terra::writeRaster(worldclim_current_data_10_crop, filename='data/environmental_data/bioclim_global_res10_crop.grd')
 terra::writeRaster(worldclim_fut_data_10_crop, filename='data/environmental_data/bioclim_fut_global_res10_crop.grd')
+
 # in Rdata
 save(worldclim_current_data_10, worldclim_fut_data_10, worldclim_current_data_10_crop, worldclim_fut_data_10_crop, file='data/environmental_data/cercopitheque_env.RData')
-
-# D] RELOAD SAVED CLIMATE DATA
-load(file='data/environmental_data/cercopitheque_env.RData')
-
 
 
 
@@ -95,6 +94,7 @@ plot(trees_30sec)
 
 # Aggregate tree cover to 10-min spatial resolution (like the climate map)
 trees_10 <- terra::aggregate(trees_30sec, fact=20, fun='mean')
+trees_10
 plot(trees_10)
 
 # B] FUTURE DATA
@@ -106,35 +106,16 @@ plot(trees_10)
 
 
 
-# !!!JOINING DATA DOESN'T WORK!!!
+
+# !!!JOINING ENVIRONMENTAL DATA DOESN'T WORK!!!
 
 
-# JOIN ENVIRONMENTAL DATA
+# JOIN CURRENT ENVIRONMENTAL DATA (join bioclim + ESA)
 # current_env <- c(worldclim_current_data_10, terra::extend(trees_10, worldclim_current_data_10))
-current_env <- worldclim_current_data_10
-future_env <- worldclim_fut_data_10
 
 
-# JOIN ENVIRONMENTAL DATA AND SPECIES DATA
-load(file='data/species_data/cercopitheque_gbif.RData')
-# quick look through our data again
-names(cercopitheque_gbif)
-head(cercopitheque_gbif)
-head(cercopitheque_gbif_coords)
+# save joined environmental data
+# save(joined_env, file='data/environmental_data/cercopitheque_joined_env.RData')
 
-head(terra::extract(x = current_env, 
-                    y = data.frame(cercopitheque_gbif_coords), cells=T ))
-# Remark : We also extract the cellnumbers as this allows checking for duplicates later.
-# Finally, we put species and environmental data into the same data frame:
-cercopitheque_gbif_env <- cbind(cercopitheque_gbif, terra::extract(x = current_env, y = data.frame(cercopitheque_gbif_coords), cells=T ))
-head(cercopitheque_gbif_env)
-summary(cercopitheque_gbif_env)
-duplicated(cercopitheque_gbif_env$cells) # 0 : we do not have any duplicate
 
-# SAVE DATA
-save(cercopitheque_gbif_env, file='data/cercopitheque_gbif_env.RData')
-
-# RASTER DATA
-files <- list.files(folder_path, pattern='grd$', full.names=TRUE )
-files
 

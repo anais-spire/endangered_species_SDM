@@ -37,10 +37,12 @@ pseudo_absence_points$presence_cercopitheque <- rep(0, nrow(pseudo_absence_point
 cercopitheque_coords <- rbind(cercopitheque_gbif_coords, pseudo_absence_points)
 
 cercopitheque_coords
-# save
+
+# SAVE
 save(cercopitheque_coords, file='data/species_data/cercopitheque_coords.RData')
 
-# MAP
+
+# MAP VISUALIZATION
 # map with legend + color from the datafram cercopitheque_coords only
 # We create a vector of colors based on the third column of cercopitheque_coords
 point_colors <- ifelse(cercopitheque_coords$presence_cercopitheque == 1, "red", "black")

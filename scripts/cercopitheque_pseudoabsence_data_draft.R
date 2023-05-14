@@ -59,4 +59,3 @@ points(bg_rand_t,pch=19,cex=0.3)
 
 bg_rand_2 <- terra::randomPoints(raster(cercopitheque_region), n=50)
 points(bg_rand_2, col='blue', pch=20, cex=1)
-
