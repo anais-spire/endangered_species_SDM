@@ -15,11 +15,11 @@ We generated this data randomly.
 ## Environmental data
 The data comes from Worldclim and ESA. More details on this data are provided in the project and the respective R script.
 
+## Generalized Linear Model (GLM)
+GLM allows us to have a first statistical insight at the data and produce results which can be compared to the ones from random forest. GLM uses the same dataset as RF, which is why it is particularly convenient in our case.
+
 ## Random forest (RF)
 We chose the random forest algorithm because it uses a very simple machine learning approach, easily reproducible, and with generally good results even on small datasets as it is the case here.
-
-## Generalized Linear Model (GLM)
-GLM allows us to have a first statistical insight at the data and produce results which can be compared to the ones from random forest. GLM uses the same dataset as RF, which is why it is particularly convennient in our case.
 
 ## Bugs and difficulties
 Many R packages used by other scientists were not up to date or didn't work on our data (scrubr for cleaning the data, terra for environmental data, mecofun for GLM, ...). Though we often found workarounds, this is particularly challenging for maps (joining, stacking, ...). 
