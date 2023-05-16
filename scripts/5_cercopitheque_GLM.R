@@ -6,6 +6,7 @@ library(mecofun) # for selection of variables
 library(caret) # for selection of variables (alternative to mecofun)
 library(RColorBrewer) # for response curves colors
 library(lattice) # for response curves surfaces
+library(pROC)
 
 # load files
 load(file='data/cercopitheque_joined_data.RData')
@@ -105,21 +106,62 @@ m_full <- glm( presence_cerco ~ bio08 + I(bio08^2) +
                family='binomial', data=df)
 summary(m_full)
 
-extractAIC(m_full, scale = 0, k = 2) # mpdem measurement
+# explained_variance <- explained_variance(m_full) # doesn't work
+# we are going to calculate the explained variance by hand
+
+predicted_m_full <- predict(m_full, type='response')
+predicted_m_full
+
+# explained_variance <- 1 - var(m_full$residuals) / var(predicted_m_full)
+
+SSE <- sum((presence_cerco - predicted_m_full)^2)
+SSE
+TSS <- sum((presence_cerco - mean(presence_cerco))^2)
+TSS
+explained_deviance <- 1 - SSE / TSS
+explained_deviance 
+# 88,6% -> très bon
+
+
+extractAIC(m_full, scale = 0, k = 2) # model measurement
 
 # simplification of the model: stepwise variable selection
 m_step <- step(m_full)
 summary(m_step)
-# variable bio19 semble être moins importante
+# linear part of bio19 is less important
 
-m_full_2 <- glm( presence_cerco ~ 
-                 bio08 + I(bio08^2) + 
+# m_step gives the same results as:
+m_step_2 <- glm( presence_cerco ~ bio08 + I(bio08^2) + 
+                 bio11 + I(bio11^2) + 
+                 bio15 + I(bio15^2) + 
+                 I(bio19^2),
+               family='binomial', data=df)
+summary(m_step_2)
+
+predicted_m_step <- predict(m_step, type='response')
+summary(predicted_m_step)
+
+SSE <- sum((presence_cerco - predicted_m_step)^2)
+SSE
+explained_deviance <- 1 - SSE / TSS
+explained_deviance 
+# result: 87,9% -> reste très bon
+
+head(m_step)
+head(m_step$fitted)
+
+m_simplified <- glm( presence_cerco ~ 
                  bio11 + I(bio11^2) + 
                  bio15 + I(bio15^2),
                family='binomial', data=df)
-summary(m_full_2)
+summary(m_simplified)
 
 
+predicted_m_simplified <- predict(m_simplified, type='response')
+SSE <- sum((presence_cerco - predicted_m_simplified)^2)
+SSE
+explained_deviance <- 1 - SSE / TSS
+explained_deviance # 77.2% -> un peu moins bon mais reste très correct
 
 # MODEL ASSESSMENT
 
@@ -142,42 +184,82 @@ head(m_full_2$fitted)
 
 # Visualization of response curves
 
+# We want to make predictions for all combinations of the two predictor variables
+# and along their entire environmental gradients:
+# xyz <- expand.grid(
+  # We produce a sequence of environmental values within the predictor ranges:
+#  bio08 = seq(min(df$bio08),max(df$bio08),length=30),
+#  bio11 = seq(min(df$bio11),max(df$bio11),length=30),
+#  bio15 = seq(min(df$bio15),max(df$bio15),length=30),
+#  bio19 = seq(min(df$bio19),max(df$bio19),length=30))
+
+# Now we can make predictions to this new data frame
+#xyz$z <- predict(m_step, newdata=xyz, type='response')
+#xyz$z
+#class(xyz$z)
+#summary(xyz)
+
+# As result, we have a 3D data structure and want to visualise this.
+# Here, I first set a color palette
+#cls <- colorRampPalette(rev(brewer.pal(11, 'RdYlBu')))(30)
+
+# Finally, we plot the response surface using the wireframe function from the lattice package
+#wireframe( z ~ bio08 + bio11 + bio15 + bio19, 
+#           data = xyz, 
+#           zlab = list("Occurrence prob.", rot=90), 
+#           drape = TRUE, col.regions = cls,
+#           scales = list(arrows = F),
+#           zlim = c(0, 1),
+#           main = "Carte de probabilité d'occurrence du\n cercopitheque erythrogaster")
+
+
+# We can also rotate the axes to better see the surface
+#wireframe(z ~ bio08 + bio14, data = xyz, zlab = list("Occurrence prob.", rot=90), 
+#          drape = TRUE, col.regions = cls, scales = list(arrows = FALSE), zlim = c(0, 1), 
+#          screen=list(z = -160, x = -70, y = 3),      main = "Carte de probabilité d'occurrence du\n cercopitheque erythrogaster")
+
+# save data
+#save(xyz, file='results/GLM.Rdata')
+
+
+
 
 
 # We want to make predictions for all combinations of the two predictor variables
 # and along their entire environmental gradients:
 xyz <- expand.grid(
-  # We produce a sequence of environmental values within the predictor ranges:
-  bio08 = seq(min(df$bio08),max(df$bio08),length=30),
-  bio11 = seq(min(df$bio11),max(df$bio11),length=30),
-  bio15 = seq(min(df$bio15),max(df$bio15),length=30),
-  bio19 = seq(min(df$bio19),max(df$bio19),length=30))
+# We produce a sequence of environmental values within the predictor ranges:
+   bio11 = seq(min(df$bio11),max(df$bio11),length=50),
+   bio15 = seq(min(df$bio15),max(df$bio15),length=50))
 
 # Now we can make predictions to this new data frame
-xyz$z <- predict(m_step, newdata=xyz, type='response')
-xyz$z
-class(xyz$z)
+xyz$z <- predict(m_simplified, newdata=xyz, type='response')
 summary(xyz)
 
 # As result, we have a 3D data structure and want to visualise this.
 # Here, I first set a color palette
-cls <- colorRampPalette(rev(brewer.pal(11, 'RdYlBu')))(30)
+cls <- colorRampPalette(rev(brewer.pal(11, 'RdYlBu')))(100)
 
 # Finally, we plot the response surface using the wireframe function from the lattice package
-wireframe( z ~ bio08 + bio11 + bio15 + bio19, 
+wireframe( z ~ bio11 + bio15, 
            data = xyz, 
            zlab = list("Occurrence prob.", rot=90), 
            drape = TRUE, col.regions = cls,
-           scales = list(arrows = F),
+           scales = list(arrows = FALSE),
            zlim = c(0, 1),
-           main = "Carte de probabilité d'occurrence du\n cercopitheque erythrogaster")
+           main = "Occurence probability of Cercopithecus Erythrogaster")
 
+wireframe( z ~ bio11 + bio15, 
+           data = xyz, 
+           zlab = list("Occurrence prob.", rot=90), 
+           drape = TRUE, col.regions = cls,
+           scales = list(arrows = FALSE),
+           zlim = c(0, 1),
+           screen=list(z = -160, x = -70, y = 3),
+           main = "Occurence probability of Cercopithecus Erythrogaster")
 
-# We can also rotate the axes to better see the surface
-wireframe(z ~ bio08 + bio14, data = xyz, zlab = list("Occurrence prob.", rot=90), 
-          drape = TRUE, col.regions = cls, scales = list(arrows = FALSE), zlim = c(0, 1), 
-          screen=list(z = -160, x = -70, y = 3),      main = "Carte de probabilité d'occurrence du\n cercopitheque erythrogaster")
 
 # save data
-save(xyz, file='results/GLM.Rdata')
+#save(xyz, file='results/GLM.Rdata')
+
 
