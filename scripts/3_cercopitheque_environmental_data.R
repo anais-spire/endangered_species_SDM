@@ -25,6 +25,8 @@ worldclim_current_data_10
 plot(worldclim_current_data_10)
 names(worldclim_current_data_10)
 
+# DOESN'T WORK
+
 # CROP TO THE REGION OF OUR INTEREST (BENIN, NIGERIA, ...)
 # changing the extent doesn't affect the number of rows and columns of the raster object. It changes the resolution instead
 worldclim_current_data_10_crop <- worldclim_current_data_10
@@ -89,11 +91,11 @@ save(worldclim_current_data_10, worldclim_fut_data_10, worldclim_current_data_10
 # LAND COVER DATA (ESA) : doesn't work...
 
 # A] CURRENT DATA
-trees_30sec <- geodata::landcover(var='trees', path=folder_path, download=T) # other variables : shrubs, grassland, cropland, bare, wetland, ...
+trees_30sec <- geodata::landcover(var='trees', path=folder_path, download=F) # other variables : shrubs, grassland, cropland, bare, wetland, ...
 plot(trees_30sec)
 
 # Aggregate tree cover to 10-min spatial resolution (like the climate map)
-trees_10 <- terra::aggregate(trees_30sec, fact=20, fun='mean')
+trees_10 <- terra::aggregate(trees_30sec, fact=20, fun='mean') # min and max value of 0 -> doesn't work
 trees_10
 plot(trees_10)
 
@@ -116,6 +118,3 @@ plot(trees_10)
 
 # save joined environmental data
 # save(joined_env, file='data/environmental_data/cercopitheque_joined_env.RData')
-
-
-
